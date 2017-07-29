@@ -1,10 +1,12 @@
 {
-  "name": "starwar-names",
-  "version": "1.0.0",
+  "name": "starwar-names-mis101bird",
+  "version": "0.0.0-development",
   "description": "Get the random star war name",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,16 @@
   },
   "homepage": "https://github.com/mis101bird/starwar-names#readme",
   "dependencies": {
+    "chai": "4.1.0",
+    "mocha": "3.4.2",
     "unique-random-array": "1.0.0"
+  },
+  "devDependencies": {
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "semantic-release": "^6.3.6"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
