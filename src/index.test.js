@@ -12,3 +12,19 @@ describe('star-war', function () {
     }
   })
 })
+
+describe('random', function () {
+  it('return array of random items', function () {
+    expect(lib.random(3)).to.satisfy(isArrayOfObject)
+
+    function isArrayOfObject (array) {
+      if (array.length === 3) {
+        return array.every(function (item) {
+          return typeof item === 'string'
+        })
+      } else {
+        return false
+      }
+    }
+  })
+})
