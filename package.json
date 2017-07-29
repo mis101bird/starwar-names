@@ -1,0 +1,26 @@
+{
+  "name": "starwar-names",
+  "version": "1.0.0",
+  "description": "Get the random star war name",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mis101bird/starwar-names.git"
+  },
+  "keywords": [
+    "random",
+    "star-war"
+  ],
+  "author": "Hsuan-Ju Lin <mis101bird@gmail.com> (http://mis101bird.js.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mis101bird/starwar-names/issues"
+  },
+  "homepage": "https://github.com/mis101bird/starwar-names#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.0"
+  }
+}
