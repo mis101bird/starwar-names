@@ -31,9 +31,15 @@
   "devDependencies": {
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.0.0",
+    "ghook": "0.0.2",
     "semantic-release": "^6.3.6"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "config":{
+    "ghooks":{
+      "pre-commit": "npm run test:single"
+    }
   }
 }
