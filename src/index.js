@@ -3,7 +3,7 @@ var random = require('unique-random-array')
 
 function randomArray (count) {
   var list = []
-  for (var i = 1; i < count; i++) {
+  for (var i = 0; i < count; i++) {
     list.push(random(allPeople)())
   }
   return list
